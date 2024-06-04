@@ -1,0 +1,49 @@
+
+<h3 class="txt-center">Your profile</h3>
+<div class="container">
+    <p-inputGroup>
+        <p-inputGroupAddon class="label">
+            FirstName
+        </p-inputGroupAddon>
+        <input type="text" pInputText [(ngModel)]="store.appState.user.firstname" />
+    </p-inputGroup>
+    <div class="spacer"></div>
+    <p-inputGroup>
+        <p-inputGroupAddon class="label">
+            LastName
+        </p-inputGroupAddon>
+        <input type="text" pInputText [(ngModel)]="store.appState.user.lastname" />
+    </p-inputGroup>
+    <div class="spacer"></div>
+    <p-inputGroup>
+        <p-inputGroupAddon class="label">
+            Age
+        </p-inputGroupAddon>
+        <input type="number" pInputText [(ngModel)]="store.appState.user.age" />
+    </p-inputGroup>
+    <div class="spacer"></div>
+    <p-inputGroup>
+        <p-inputGroupAddon class="label">
+            Street
+        </p-inputGroupAddon>
+        <input type="text" pInputText [(ngModel)]="store.appState.user.address.street" class="street"/>
+    </p-inputGroup>
+    <div class="spacer"></div>
+    <p-inputGroup>
+        <p-inputGroupAddon class="label">
+            City
+        </p-inputGroupAddon>
+        <input type="text" pInputText [(ngModel)]="store.appState.user.address.city" />
+    </p-inputGroup>
+    <div class="spacer"></div>
+</div>
+<div class="message">
+    Note that no validate button is needed here. Of course it would be better in order to
+    control the inputs before they are injected into the app, but we proceed this way here to
+    demonstrate the power of the services associated to the change detection loop.
+    <br><br>
+    Also note that leaving "street" and "city" empty, the billing process of your first order
+    will ask you this information, that will be stored into your profile. Ordering a second time,
+    the billing process will not propose you any more to complete this information, that you will be
+    able however to modify from the present profile page.
+</div>

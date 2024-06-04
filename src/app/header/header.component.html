@@ -1,0 +1,11 @@
+@if(store.appState.user.identified) {
+  <p-menubar [model]="items">
+    <span>{{store.appState.user.firstname}} {{store.appState.user.lastname}}</span>
+    <h3>Angular State Management</h3>
+  </p-menubar>
+}
+@else {
+  <p-menubar [model]="[]">
+    <h3>Angular State Management</h3>
+  </p-menubar>
+}

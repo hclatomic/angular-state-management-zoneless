@@ -1,0 +1,37 @@
+.container {
+    position: relative;
+    left: 0;
+    right: 0;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    padding: 0.5em;
+}
+.txt-center {
+    text-align: center
+}
+.spacer {
+    padding: 0.25em;
+}
+
+.label {
+    width: 120px
+}
+input {
+    padding: 0.5em;
+}
+input.street {
+    width: 400px;
+}
+.message {
+    background: #cfc;
+    border: 1px solid #060;
+    border-radius: 1em;
+    padding: 0.5em;
+    width: 50%;
+    margin: auto;
+    margin-top: 2em;
+    font-size: 0.9em;
+}
